@@ -7,7 +7,7 @@ CREATE TABLE [Dependencia]
 (
 [Id] INT IDENTITY(1,1),
 [Nombre] VARCHAR (50)
-CONSTRAINT PK_Dependencia PRIMARY_KEY (Id),
+CONSTRAINT PK_Dependencia PRIMARY KEY (Id),
 );
 GO
 
@@ -32,7 +32,7 @@ INSERT INTO [dbo].[Dependencia]
 		   ('Recursos humanos'),
 		   ('Comercial'),
 		   ('Finanzas'),
-		   ('Ingenieria')
+		   ('Ingenieria PRIVATE_KEY')
 GO
 
 
