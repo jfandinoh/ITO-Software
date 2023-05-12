@@ -7,7 +7,7 @@ CREATE TABLE [Dependencia]
 (
 [Id] INT IDENTITY(1,1),
 [Nombre] VARCHAR (50)
-CONSTRAINT PK_Dependencia PRIMARY KEY (Id),
+CONSTRAINT PK_Dependencia PRIMARY_KEY (Id),
 );
 GO
 
@@ -20,6 +20,8 @@ CONSTRAINT PK_Empleado PRIMARY KEY (Id),
 CONSTRAINT FK_EmpleadoDependencia FOREIGN KEY ([Id_Dependencia]) REFERENCES [Dependencia]([Id])
 );
 GO
+
+/**/
 
 /*Se insertan datos en base de datos*/
 INSERT INTO [dbo].[Dependencia]
@@ -38,5 +40,5 @@ INSERT INTO [dbo].[Empleado]
            ([Id_Dependencia]
            ,[Nombre])
      VALUES
-		   ('1','Juan Andres Carrillo')           
+		   ('1','PUBLIC_KEY')           
 GO
