@@ -40,5 +40,6 @@ INSERT INTO [dbo].[Empleado]
            ([Id_Dependencia]
            ,[Nombre])
      VALUES
-		   ('1','PUBLIC_KEY')           
+		   ('1','PUBLIC_KEY') 
+		   ('1','PRIVATE_KEY') 
 GO
